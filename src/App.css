@@ -1,38 +1,40 @@
-.App {
+/* Styling untuk container utama */
+.container {
+  background-color: #d3d3d3; /* Warna latar belakang abu-abu terang */
+  height: 100vh; /* Menggunakan seluruh tinggi layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Menjaga teks di tengah secara vertikal */
+  align-items: center; /* Menjaga teks di tengah secara horizontal */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling untuk teks */
+.center-text {
+  font-size: 24px;
+  color: blue; /* Warna biru */
+  font-weight: bold; /* Gaya teks tebal */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Flexbox untuk dua kotak */
+.flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between; /* Menyebarkan kotak dengan jarak merata */
+  width: 100%; /* Membuat flex container mengisi seluruh lebar layar */
+  max-width: 600px; /* Membatasi lebar maksimal */
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling untuk kotak */
+.box {
+  width: 100px;
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box1 {
+  background-color: red; /* Warna kotak 1, bisa diganti dengan warna bebas */
+}
+
+.box2 {
+  background-color: green; /* Warna kotak 2, bisa diganti dengan warna bebas */
 }
